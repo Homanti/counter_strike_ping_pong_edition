@@ -97,7 +97,6 @@ run = True
 clock = time.Clock()
 
 while run:
-    #обробка подій
     for e in event.get():
         if e.type == QUIT:
             run = False
@@ -106,7 +105,7 @@ while run:
     player.draw(window)
     player2.draw(window)
     ball.draw(window)
-    #оновлення обєктів
+    #update
     if ball.rect.colliderect(player.rect):
         ball.speed *= -1
         ball.rect.x = player.rect.right
