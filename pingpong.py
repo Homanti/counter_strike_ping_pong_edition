@@ -119,3 +119,4 @@ while run:
     ball.update()
     display.update()
     clock.tick(60)
+    print('hello world')
